@@ -14,17 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
+        "title" => "About",
         "name" => "Febrian Wardi",
         "email" => "wardi.183040121@mail.unpas.ac.id",
         "image" => "ava.png"
     ]);
 });
 
-Route::get('/blog', function () {
-    return view('posts');
+Route::get('/posts', function () {
+    return view('posts', [
+        "title" => "Blog"
+    ]);
 });
