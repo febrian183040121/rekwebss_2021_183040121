@@ -10,6 +10,8 @@
 
     <title>WPU | {{ $title }}</title>
   </head>
+
+  
   <body>
 
     @include('partials.navbar');
